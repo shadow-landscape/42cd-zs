@@ -1,0 +1,51 @@
+<!-- ============================================================
+     نموذج طلب الاستشارة — ملف مركزي واحد تُعرض منه جميع الصفحات
+     Contact consultation form — the ONE file every page loads.
+     عدّل الحقول أو النصوص هنا فقط، وستتغير في كل الصفحات.
+     Edit fields/labels here only; every page updates automatically.
+     ============================================================ -->
+<div data-lang="ar">
+<form class="cform" novalidate data-req="هذا الحقل مطلوب" data-bphone="أدخل رقم جوال سعودي صحيح يبدأ بـ 05" data-short="يرجى كتابة 10 أحرف على الأقل">
+<h3>اطلب استشارتك القانونية</h3>
+<p>املأ البيانات وسيتم إرسال طلبك مباشرة إلى فريقنا عبر البريد الإلكتروني.</p>
+<div class="frow">
+<div class="fld"><label for="ar-first">الاسم الأول <i>*</i></label><input id="ar-first" name="first" autocomplete="given-name" required><span class="em"></span></div>
+<div class="fld"><label for="ar-last">اسم العائلة <i>*</i></label><input id="ar-last" name="last" autocomplete="family-name" required><span class="em"></span></div>
+</div>
+<div class="frow">
+<div class="fld"><label for="ar-phone">رقم الجوال <i>*</i></label><input id="ar-phone" name="phone" type="tel" inputmode="tel" dir="ltr" placeholder="05XXXXXXXX" autocomplete="tel" required><span class="em"></span></div>
+<div class="fld"><label for="ar-branch">الفرع <i>*</i></label><select id="ar-branch" name="branch" required><option value="">اختر الفرع</option><option value="الرياض">الرياض</option><option value="المدينة المنورة">المدينة المنورة</option></select><span class="em"></span></div>
+</div>
+<div class="fld"><label for="ar-service">الخدمة القانونية <i>*</i></label><select id="ar-service" name="service" required><option value="">اختر الخدمة</option><option value="الاعتداء الزوجي">الاعتداء الزوجي</option><option value="الشرب والقيادة">الشرب والقيادة</option><option value="جرائم المخدرات">جرائم المخدرات</option><option value="الجرائم الجنسية">الجرائم الجنسية</option><option value="السرقة">السرقة</option><option value="احتيال">احتيال</option><option value="غسيل أموال">غسيل أموال</option><option value="إساءة الأطفال">إساءة الأطفال</option><option value="استشارة عامة">استشارة عامة / أخرى</option></select><span class="em"></span></div>
+<div class="fld"><label for="ar-details">تفاصيل الاستشارة <i>*</i></label><textarea id="ar-details" name="details" placeholder="اكتب نبذة مختصرة عن موضوعك القانوني..." required></textarea><span class="em"></span></div>
+<!-- honeypot -->
+<input type="text" name="_gotcha" value="" style="display:none !important" tabindex="-1" autocomplete="off">
+<button class="btn btn-wa" type="submit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg> إرسال الطلب</button>
+<p class="fnote"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>بياناتك محمية ولن تُستخدم إلا للرد على طلبك.</span></p>
+<div class="fok" role="status" aria-live="polite"><b>تم إرسال طلبك بنجاح</b>شكراً لك. سيصلك رد من فريق راية القانون في أقرب وقت ممكن عبر البريد أو الجوال.</div>
+<div class="ferr" role="alert" aria-live="assertive" style="display:none;margin-top:1.2rem;padding:1.15rem;border-radius:14px;background:#fdf2f2;border:1px solid #f5c2c7;color:#842029;overflow-wrap:break-word"><b>تعذر إرسال الطلب</b><span class="ferr-msg">حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة.</span></div>
+</form>
+</div>
+
+<div data-lang="en">
+<form class="cform" novalidate data-req="This field is required" data-bphone="Enter a valid Saudi mobile number starting with 05" data-short="Please write at least 10 characters">
+<h3>Request Your Legal Consultation</h3>
+<p>Fill in your details and your request will be sent directly to our team by email.</p>
+<div class="frow">
+<div class="fld"><label for="en-first">First name <i>*</i></label><input id="en-first" name="first" autocomplete="given-name" required><span class="em"></span></div>
+<div class="fld"><label for="en-last">Last name <i>*</i></label><input id="en-last" name="last" autocomplete="family-name" required><span class="em"></span></div>
+</div>
+<div class="frow">
+<div class="fld"><label for="en-phone">Mobile number <i>*</i></label><input id="en-phone" name="phone" type="tel" inputmode="tel" dir="ltr" placeholder="05XXXXXXXX" autocomplete="tel" required><span class="em"></span></div>
+<div class="fld"><label for="en-branch">Branch <i>*</i></label><select id="en-branch" name="branch" required><option value="">Select a branch</option><option value="الرياض">Riyadh</option><option value="المدينة المنورة">Madinah</option></select><span class="em"></span></div>
+</div>
+<div class="fld"><label for="en-service">Legal service <i>*</i></label><select id="en-service" name="service" required><option value="">Select a service</option><option value="الاعتداء الزوجي">Domestic Assault</option><option value="الشرب والقيادة">Drinking and Driving</option><option value="جرائم المخدرات">Drug Offenses</option><option value="الجرائم الجنسية">Sexual Offenses</option><option value="السرقة">Theft</option><option value="احتيال">Fraud</option><option value="غسيل أموال">Money Laundering</option><option value="إساءة الأطفال">Child Abuse</option><option value="استشارة عامة">General consultation / Other</option></select><span class="em"></span></div>
+<div class="fld"><label for="en-details">Consultation details <i>*</i></label><textarea id="en-details" name="details" placeholder="Briefly describe your legal matter..." required></textarea><span class="em"></span></div>
+<!-- honeypot -->
+<input type="text" name="_gotcha" value="" style="display:none !important" tabindex="-1" autocomplete="off">
+<button class="btn btn-wa" type="submit"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg> Submit request</button>
+<p class="fnote"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Your data is protected and will only be used to respond to your request.</span></p>
+<div class="fok" role="status" aria-live="polite"><b>Your request has been sent successfully</b>Thank you. Our Rayat Al-Qanoon team will get back to you as soon as possible by email or phone.</div>
+<div class="ferr" role="alert" aria-live="assertive" style="display:none;margin-top:1.2rem;padding:1.15rem;border-radius:14px;background:#fdf2f2;border:1px solid #f5c2c7;color:#842029;overflow-wrap:break-word"><b>Failed to send request</b><span class="ferr-msg">An error occurred while sending. Please try again or contact us directly.</span></div>
+</form>
+</div>
